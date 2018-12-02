@@ -1,0 +1,20 @@
+{
+  "name": "projeto-final",
+  "version": "1.0.0",
+  "description": "Projeto final da reprograma",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "almeida-nicole@live.com",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/almeida-nicole/projeto-final.git"
+  },
+  "bugs": {
+    "url": "https://github.com/almeida-nicole/projeto-final/issues"
+  },
+  "homepage": "https://github.com/almeida-nicole/projeto-final#readme",
+  "dependencies": {}
+}
