@@ -1,0 +1,40 @@
+.filmes {
+  width: 40%;
+}
+
+.filmes__form {
+  text-align: center;
+}
+
+.filmes__input {
+  background: #46b9b5;
+  color: #fff;
+}
+
+.filmes__input:focus {
+  border: 1px solid #3ba7a3;
+}
+
+.filmes__sortear {
+  background: #75ded6;
+  color: white;
+}
+
+.filmes__sorteado {
+  text-align: center;
+}
+
+.filmes__titulo {
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 40px;
+}
+
+.filmes__titulo-escolhido {
+  margin-top: 25px;
+  color: black;
+  font-weight: bold;
+}
+
+.is-hidden {
+  display: none;
+}

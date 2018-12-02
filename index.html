@@ -5,10 +5,30 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Projeto Final</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Montserrat" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 <body>
   <main class="main">
+    <div class="descricao">
+      <h1 class="descricao__titulo">Sabe aquele momento que você quer assistir um filme e não sabe qual escolher?</h1>
+      <p class="descricao__subtitulo">Nós estamos aqui para te ajudar! Cadastre até 5 filmes no formulário ao lado e você verá o filme escolhido.</p>
+    </div>
+    <div class="filmes">
+      <form class="form filmes__form">
+        <input class="form__input filmes__input" type="text">
+        <input class="form__input filmes__input" type="text">
+        <input class="form__input filmes__input" type="text">
+        <input class="form__input filmes__input" type="text">
+        <input class="form__input filmes__input" type="text">
+        <button class="form__button filmes__sortear">Sortear</button>
+      </form>
+      <div class="filmes__sorteado is-hidden">
+        <h2 class="filmes__titulo">O filme sorteado foi:</h2>
+        <p class="filmes__titulo-escolhido"></p>
+      </div>
+    </div>
   </main>
+  <script src="js/sorteio.js"></script>
 </body>
 </html>
