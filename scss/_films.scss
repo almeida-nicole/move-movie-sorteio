@@ -2,9 +2,16 @@
   width: 40%;
 }
 
+@media (min-width: 320px) and (max-width: 520px) {
+  .filmes {
+    width: 85%;
+  }
+}
+
 .filmes__form {
   text-align: center;
 }
+
 
 .filmes__input {
   background: #46b9b5;
@@ -19,6 +26,11 @@
   background: #75ded6;
   color: white;
 }
+@media (min-width: 320px) and (max-width: 1024px) {
+  .filmes__sortear{
+    margin-bottom: 25px;
+  }
+}
 
 .filmes__sorteado {
   text-align: center;
@@ -29,10 +41,22 @@
   font-size: 40px;
 }
 
+@media(max-width: 1024px) {
+  .filmes__titulo {
+    font-size: 30px;
+  }
+}
+
 .filmes__titulo-escolhido {
   margin-top: 25px;
   color: black;
   font-weight: bold;
+}
+
+.filmes__reset {
+  font-size: 12px;
+  margin-top: 19px;
+  color: white;
 }
 
 .is-hidden {

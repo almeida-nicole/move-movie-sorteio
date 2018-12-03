@@ -2,6 +2,13 @@
   width: 40%;
 }
 
+@media (min-width: 320px) and (max-width: 420px) {
+  .descricao {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
 .descricao__titulo {
   font-weight: bold;
   line-height: 1;
@@ -12,4 +19,15 @@
   font-size: 25px;
   margin-top: 25px;
   color: #141414;
+}
+
+@media (max-width: 1024px) {
+  .descricao__titulo {
+    font-size: 30px;
+  }
+  .descricao__subtitulo {
+    font-size: 15px;
+  }
+
+
 }

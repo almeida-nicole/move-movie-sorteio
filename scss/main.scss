@@ -2,6 +2,7 @@
 @import '_form';
 @import '_description';
 @import '_films.scss';
+@import '_media-queries';
 
 
 .main {
@@ -12,4 +13,21 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 5%;
+}
+
+
+@media (min-width: 320px) and (max-width: 520px) {
+  .main {
+    height: 100%;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1024px) {
+  .main {
+    padding: 5%;
+  }
+  .logo-pipoca {
+    width: 180px;
+  }
 }

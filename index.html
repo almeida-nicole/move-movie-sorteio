@@ -9,7 +9,10 @@
   <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 <body>
+  <header>
+  </header>
   <main class="main">
+    <img class="logo-pipoca" src="img/logo-pop-corn.png">
     <div class="descricao">
       <h1 class="descricao__titulo">Sabe aquele momento que você quer assistir um filme e não sabe qual escolher?</h1>
       <p class="descricao__subtitulo">Nós estamos aqui para te ajudar! Cadastre até 5 filmes no formulário ao lado e você verá o filme escolhido.</p>
@@ -24,8 +27,11 @@
         <button class="form__button filmes__sortear">Sortear</button>
       </form>
       <div class="filmes__sorteado is-hidden">
-        <h2 class="filmes__titulo">O filme sorteado foi:</h2>
+        <h2 class="filmes__titulo">O filme escolhido foi:</h2>
         <p class="filmes__titulo-escolhido"></p>
+        <a href="">
+          <p class="filmes__reset">Não gostou? Sorteie novamente</p>
+        </a>
       </div>
     </div>
   </main>

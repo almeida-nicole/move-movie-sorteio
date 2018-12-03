@@ -1,4 +1,4 @@
-html, body, input, form, ul, h1, h2, h3, h4, h5, h6, p {
+html, body, input, form, ul, h1, h2, h3, h4, h5, h6, p, a {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -8,7 +8,8 @@ html, body, input, form, ul, h1, h2, h3, h4, h5, h6, p {
   font-style: inherit;
   font-size: 100%;
   font-family: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+  text-decoration: none; }
 
 body {
   box-sizing: border-box;
@@ -27,6 +28,14 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 21px;
   padding: 0 10px; }
 
+@media (min-width: 320px) and (max-width: 520px) {
+  .form__input {
+    height: 35px;
+    margin-bottom: 10px; } }
+@media (max-width: 1024px) {
+  .form__input {
+    height: 35px;
+    width: 80%; } }
 .form__button {
   border: none;
   font-size: 20px;
@@ -36,6 +45,10 @@ h1, h2, h3, h4, h5, h6 {
 .descricao {
   width: 40%; }
 
+@media (min-width: 320px) and (max-width: 420px) {
+  .descricao {
+    width: 100%;
+    margin-bottom: 10px; } }
 .descricao__titulo {
   font-weight: bold;
   line-height: 1;
@@ -46,9 +59,18 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 25px;
   color: #141414; }
 
+@media (max-width: 1024px) {
+  .descricao__titulo {
+    font-size: 30px; }
+
+  .descricao__subtitulo {
+    font-size: 15px; } }
 .filmes {
   width: 40%; }
 
+@media (min-width: 320px) and (max-width: 520px) {
+  .filmes {
+    width: 85%; } }
 .filmes__form {
   text-align: center; }
 
@@ -63,6 +85,9 @@ h1, h2, h3, h4, h5, h6 {
   background: #75ded6;
   color: white; }
 
+@media (min-width: 320px) and (max-width: 1024px) {
+  .filmes__sortear {
+    margin-bottom: 25px; } }
 .filmes__sorteado {
   text-align: center; }
 
@@ -70,10 +95,18 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Didact Gothic', sans-serif;
   font-size: 40px; }
 
+@media (max-width: 1024px) {
+  .filmes__titulo {
+    font-size: 30px; } }
 .filmes__titulo-escolhido {
   margin-top: 25px;
   color: black;
   font-weight: bold; }
+
+.filmes__reset {
+  font-size: 12px;
+  margin-top: 19px;
+  color: white; }
 
 .is-hidden {
   display: none; }
@@ -86,5 +119,16 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
   align-items: center;
   padding: 0 5%; }
+
+@media (min-width: 320px) and (max-width: 520px) {
+  .main {
+    height: 100%;
+    flex-direction: column; } }
+@media (max-width: 1024px) {
+  .main {
+    padding: 5%; }
+
+  .logo-pipoca {
+    width: 180px; } }
 
 /*# sourceMappingURL=style.css.map */
