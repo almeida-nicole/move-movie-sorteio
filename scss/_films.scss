@@ -39,6 +39,17 @@
   }
 }
 
+.filmes__imagem {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  align-items: flex-end;
+}
+.filmes__imagem img {
+  height: 40px;
+  margin-right: 10px;
+}
+
 .is-hidden {
   display: none;
 }

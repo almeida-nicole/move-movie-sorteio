@@ -96,6 +96,16 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 19px;
     color: white; }
 
+.filmes__imagem {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  align-items: flex-end; }
+
+.filmes__imagem img {
+  height: 40px;
+  margin-right: 10px; }
+
 .is-hidden {
   display: none; }
 
@@ -116,7 +126,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #48d1cc;
   color: #fff;
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   justify-content: space-between;
   align-items: center;
   padding: 0 5%; }
@@ -124,8 +134,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 320px) and (max-width: 768px) {
   .main {
     justify-content: space-around;
-    flex-direction: column;
-    height: 100%; }
+    flex-direction: column; }
 
   .logo-pipoca {
     width: 150px; } }

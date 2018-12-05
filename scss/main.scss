@@ -9,7 +9,7 @@
   background-color: #48d1cc;
   color: #fff;
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   justify-content: space-between;
   align-items: center;
   padding: 0 5%;
@@ -20,7 +20,6 @@
   .main {
     justify-content: space-around;
     flex-direction: column;
-    height: 100%;
   }
   .logo-pipoca {
     width: 150px;
