@@ -16,14 +16,18 @@
 }
 
 
-@media (min-width: 320px) and (max-width: 520px) {
+@media (min-width: 320px) and (max-width: 768px) {
   .main {
-    height: 100%;
+    justify-content: space-around;
     flex-direction: column;
+    height: 100%;
+  }
+  .logo-pipoca {
+    width: 150px;
   }
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1200px){
   .main {
     padding: 5%;
   }
