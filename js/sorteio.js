@@ -1,4 +1,3 @@
-const button = document.querySelector('.filmes__sortear');
 const form = document.querySelector('.filmes__form');
 const tituloEscolhido = document.querySelector('.filmes__titulo-escolhido');
 const filmesBox = document.querySelector('.filmes__sorteado');
@@ -11,13 +10,13 @@ const filmes = getFilmes();
 // sortear os filmes
 const filmeSorteado = sorteiaFilme(filmes);
 // sumir com os inputs e mostrar o filme escolhido
-mostrarFilmeEscolhido(filmeSorteado);
-
+toggleFilmeEscolhido(filmeSorteado);
 });
 
 buttonResetSorteio.addEventListener('click', function(ev){
+ev.preventDefault();
 resetSorteio();
-form.classList.remove('is-hidden');
+toggleFilmeEscolhido('');
 
 })
 
@@ -26,10 +25,10 @@ function sorteiaNumero(numero) {
   return Math.ceil(Math.random() * numero);
 }
 
-function mostrarFilmeEscolhido(filme) {
+function toggleFilmeEscolhido(filme) {
   tituloEscolhido.textContent = filme;
-  form.classList.add('is-hidden');
-  filmesBox.classList.remove('is-hidden');
+  form.classList.toggle('is-hidden');
+  filmesBox.classList.toggle('is-hidden');
 }
 
 function getFilmes() {
@@ -47,7 +46,10 @@ function sorteiaFilme(filmes) {
 }
 
 function resetSorteio() {
-  const filmesPreenchidos = document.querySelectorAll('.filmes__input');
-  filmesPreenchidos = [];
-  return filmesPreenchidos;
+  document.querySelectorAll('.filmes__input').forEach(filme => {
+    filme.value = '';
+
+  })
+  //pegar os inputs
+  //limpar os inputs
 }

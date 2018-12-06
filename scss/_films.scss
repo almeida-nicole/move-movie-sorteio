@@ -48,11 +48,21 @@
 .filmes__imagem img {
   height: 40px;
   margin-right: 10px;
+  animation: rolodefilme 3s infinite linear;
 }
 
 .is-hidden {
   display: none;
 }
+
+@keyframes rolodefilme {
+  from {
+    transform: rotate(0deg);
+  }
+  to {transform: rotate(360deg);
+  }
+}
+
 @media (min-width: 320px) and (max-width: 768px) {
   .filmes {
     width: 100%;
@@ -66,7 +76,7 @@
 }
 
 
-@media(min-width: 320px) and (max-width: 768px) {
+@media(min-width: 320px) and (max-width: 767px) {
   .filmes__titulo {
   font-size: 25px;
   margin-top: 15px;
