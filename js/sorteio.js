@@ -46,10 +46,9 @@ function sorteiaFilme(filmes) {
 }
 
 function resetSorteio() {
-  document.querySelectorAll('.filmes__input').forEach(filme => {
-    filme.value = '';
-
-  })
   //pegar os inputs
+  document.querySelectorAll('.filmes__input').forEach(filme => {
   //limpar os inputs
+    filme.value = '';
+  })
 }
