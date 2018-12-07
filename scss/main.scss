@@ -16,6 +16,7 @@
 .logo-pipoca {
   animation: pipoca 1.5s;
   width: 195px;
+  padding-top: 20px;
 }
 
 @keyframes pipoca {
@@ -36,6 +37,7 @@
   }
   .logo-pipoca {
     width: 150px;
+    padding-top: 20px;
   }
 }
 
@@ -45,5 +47,6 @@
   }
   .logo-pipoca {
     width: 180px;
+    padding-top: 20px;
   }
 }

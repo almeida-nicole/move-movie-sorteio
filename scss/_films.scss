@@ -32,24 +32,25 @@
     font-weight: bold;
   }
 
+  &__imagem {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    align-items: flex-end;
+   img {
+    height: 40px;
+    margin-right: 10px;
+    animation: rolodefilme 3s infinite linear;
+    }
+  }
   &__reset {
     font-size: 12px;
     margin-top: 19px;
     color: white;
+    padding-bottom: 10px;
   }
 }
 
-.filmes__imagem {
-  display: flex;
-  justify-content: center;
-  margin-top: 15px;
-  align-items: flex-end;
-}
-.filmes__imagem img {
-  height: 40px;
-  margin-right: 10px;
-  animation: rolodefilme 3s infinite linear;
-}
 
 .is-hidden {
   display: none;
